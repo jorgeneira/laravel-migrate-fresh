@@ -6,7 +6,7 @@ use Spatie\MigrateFresh\TableDroppers\TableDropper;
 
 class TableDropperFactory
 {
-    public static function create($driverName): TableDropper
+    public static function create($driverName)
     {
         $dropperClass = '\\Spatie\\MigrateFresh\\TableDroppers\\'.ucfirst($driverName);
 
