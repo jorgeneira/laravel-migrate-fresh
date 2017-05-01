@@ -56,7 +56,7 @@ class MigrateFresh extends Command
         $this->comment('All done!');
     }
 
-    public function getTableDropper(): TableDropper
+    public function getTableDropper()
     {
         return TableDropperFactory::create(DB::getDriverName());
     }
